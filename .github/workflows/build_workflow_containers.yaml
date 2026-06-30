@@ -19,7 +19,7 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}/builder
+  IMAGE_NAME: pixelpolitov/builder
 
 jobs:
   populate-env-vars:
