@@ -119,5 +119,4 @@ jobs:
 
           # Create SHA-pinned multi-arch manifest from the per-arch SHA tags
           docker buildx imagetools create -t ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${distro_version}-${sha} \
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${distro_version}-${sha}-amd64 \
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${distro_version}-${sha}-arm64
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${distro_version}-${sha}-amd64
